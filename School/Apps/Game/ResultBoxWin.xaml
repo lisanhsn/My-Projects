@@ -1,0 +1,28 @@
+﻿<Window x:Class="SDD_Student.Apps.Game.ResultBoxWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SDD_Student.Apps.Game"
+        mc:Ignorable="d"
+        Title="ResultBoxWin" Height="400" Width="600" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style TargetType="Border">
+            <Setter Property="CornerRadius" Value="40"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Image Source="\Apps\Game\Assets\ResultAssets\Back.jpg" Stretch="Fill"/>
+        <Button x:Name="CloseBtn" Content="Close" FontFamily="Consolas" FontSize="23" FontWeight="Bold" Foreground="Red" Background="black" HorizontalAlignment="Left" Margin="461,349,0,0" VerticalAlignment="Top" Height="41" Width="129" Click="CloseBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Image x:Name="winerImage" Source="/Apps/Game/Assets/ResultAssets/Player1.png" HorizontalAlignment="Left" Height="195" Margin="202,10,0,0" VerticalAlignment="Top" Width="218"/>
+        <Label Content="" FontSize="23" FontWeight="Bold" x:Name="winerName" HorizontalAlignment="Left" Margin="19,148,0,0" VerticalAlignment="Top"/>
+        <Image Source="/Apps/Game/Assets/ResultAssets/Win.jpg" HorizontalAlignment="Left" Height="208" Margin="19,172,0,0" VerticalAlignment="Top" Width="197"/>
+        <Label x:Name="ResultScore" Content="00" FontFamily="consolas" FontSize="35" FontWeight="Bold" HorizontalAlignment="Left" Margin="84,108,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AboutPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Apps\Calc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Apps\Game\ResultBoxWin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Apps\Game\SDDICEROLL.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Apps\NotePadApp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CalcPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CBrowserPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CGoogPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CodeEditorPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CustomGoogleWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DBrowserPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MusicAppWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MusicPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NotePadPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OGoogPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="wPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AboutPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Apps\Calc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Apps\Game\ResultBoxWin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Apps\Game\SDDICEROLL.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Apps\NotePadApp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CalcPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CBrowserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CGoogPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CodeEditorPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomGoogleWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DBrowserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MusicAppWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MusicPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NotePadPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OGoogPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="wPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

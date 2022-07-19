@@ -1,0 +1,21 @@
+﻿<Window x:Class="SDD_Student.Apps.Game.Logging"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SDD_Student.Apps.Game"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Logging" Height="300" Width="600" Loaded="Window_Loaded">
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" Height="284" Stroke="Transparent" Fill="DarkGreen"  VerticalAlignment="Center" Width="600"/>
+
+        <Label Content="Player Introduction" FontSize="30" FontWeight="Bold" FontFamily="consolas" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Player1 Name: " FontSize="30" FontWeight="Bold" FontFamily="consolas" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="NameOne" HorizontalAlignment="Left"  FontFamily="consolas" FontSize="30" FontWeight="Bold" Width="218" Margin="251,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="40" Background="LightGray" BorderBrush="Transparent" BorderThickness="0" Padding="0"/>
+        <Label Content="Player2 Name: " FontSize="30" FontWeight="Bold" FontFamily="consolas" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Foreground="white"/>
+        <TextBox x:Name="NameTwo" HorizontalAlignment="Left"  FontFamily="consolas" FontSize="30" FontWeight="Bold" Width="218" Margin="251,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="40" Background="LightGray" BorderBrush="Transparent" BorderThickness="0" Padding="0"/>
+        <Button x:Name="GetInGame" Content="Get In" HorizontalAlignment="Center" Margin="0,212,0,0" VerticalAlignment="Top" Height="43" Width="140" FontSize="30" Padding="0 0 0 0" FontFamily="consolas" FontWeight="Bold" Background="Darkblue" Foreground="red" Click="GetInGame_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,282 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>SDD_Student</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Apps\Game\Assets\DefaultDice.png" />
+    <None Remove="Apps\Game\Assets\DICEBACK.jpg" />
+    <None Remove="Apps\Game\Assets\DiceFace\D1.PNG" />
+    <None Remove="Apps\Game\Assets\DiceFace\D2.PNG" />
+    <None Remove="Apps\Game\Assets\DiceFace\D3.PNG" />
+    <None Remove="Apps\Game\Assets\DiceFace\D4.PNG" />
+    <None Remove="Apps\Game\Assets\DiceFace\D5.PNG" />
+    <None Remove="Apps\Game\Assets\DiceFace\D6.PNG" />
+    <None Remove="Apps\Game\Assets\DiceFace\DC1.PNG" />
+    <None Remove="Apps\Game\Assets\DiceFace\DC2.PNG" />
+    <None Remove="Apps\Game\Assets\DiceFace\DC3.PNG" />
+    <None Remove="Apps\Game\Assets\DiceFace\DC4.PNG" />
+    <None Remove="Apps\Game\Assets\DiceFace\DC5.PNG" />
+    <None Remove="Apps\Game\Assets\DiceFace\DC6.PNG" />
+    <None Remove="Apps\Game\Assets\DiceFace\DICEBACK.jpg" />
+    <None Remove="Apps\Game\Assets\DiceFace\Result.png" />
+    <None Remove="Apps\Game\Assets\DiceFace\wait.png" />
+    <None Remove="Apps\Game\Assets\ResultAssets\Back.jpg" />
+    <None Remove="Apps\Game\Assets\ResultAssets\Player1.png" />
+    <None Remove="Apps\Game\Assets\ResultAssets\Player2.png" />
+    <None Remove="Apps\Game\Assets\ResultAssets\Win.jpg" />
+    <None Remove="Assets\CustomGoogle\CuGoogle.html" />
+    <None Remove="Assets\Fonts\neophyte-neophyte-400.ttf" />
+    <None Remove="Assets\Images\clock.png" />
+    <None Remove="Assets\Images\Exit.png" />
+    <None Remove="Assets\Images\MenuButtonIcons\about.png" />
+    <None Remove="Assets\Images\MenuButtonIcons\calIcon.png" />
+    <None Remove="Assets\Images\MenuButtonIcons\Code_1.png" />
+    <None Remove="Assets\Images\MenuButtonIcons\googIcon.png" />
+    <None Remove="Assets\Images\MenuButtonIcons\mBrowIcon.png" />
+    <None Remove="Assets\Images\MenuButtonIcons\Music.png" />
+    <None Remove="Assets\Images\MenuButtonIcons\MyBrowIcon.png" />
+    <None Remove="Assets\Images\MenuButtonIcons\npIcon.png" />
+    <None Remove="Assets\Images\MenuButtonIcons\OGoog.png" />
+    <None Remove="Assets\Images\MenuButtonIcons\toolbox.png" />
+    <None Remove="Assets\Images\MenuButtonIcons\usb-plug.png" />
+    <None Remove="Assets\Images\MenuButtonIcons\usb.png" />
+    <None Remove="Assets\Images\toolbox.png" />
+    <None Remove="Assets\Images\User.png" />
+    <None Remove="Assets\Images\clock.png" />
+    <None Remove="Assets\Images\Code.png" />
+    <None Remove="Assets\Images\Code_1.png" />
+    <None Remove="Assets\Images\Exit.png" />
+    <None Remove="Assets\Images\usb-plug.png" />
+    <None Remove="Assets\Images\usb.png" />
+    <None Remove="Assets\Images\User.png" />
+    <None Remove="Assets\Music App\back.png" />
+    <None Remove="Assets\Music App\lightning.png" />
+    <None Remove="Assets\Music App\music.png" />
+    <None Remove="Assets\Music App\p2.png" />
+    <None Remove="Assets\Music App\pause.png" />
+    <None Remove="Assets\Music App\play.png" />
+    <None Remove="Assets\Music App\search.png" />
+    <None Remove="Assets\PageIcon\AB.png" />
+    <None Remove="Assets\PageIcon\calc.png" />
+    <None Remove="Assets\PageIcon\cB.png" />
+    <None Remove="Assets\PageIcon\code.png" />
+    <None Remove="Assets\PageIcon\dIcon.png" />
+    <None Remove="Assets\PageIcon\MG.png" />
+    <None Remove="Assets\PageIcon\ms.png" />
+    <None Remove="Assets\PageIcon\music.png" />
+    <None Remove="Assets\PageIcon\note.png" />
+    <None Remove="Assets\PageIcon\OG.png" />
+    <None Remove="Assets\PageIcon\racing.png" />
+    <None Remove="Assets\PageIcon\start.png" />
+    <None Remove="Assets\Songs\s.mp3" />
+    <None Remove="Documents\help.html" />
+    <None Remove="Documents\UserManual.pdf" />
+    <None Remove="Documents\UserManual.xps" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Songs\s.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Documents\help.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Documents\UserManual.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\CustomGoogle\CuGoogle.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Resource Include="Apps\Game\Assets\DefaultDice.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DICEBACK.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\D1.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\D2.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\D3.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\D4.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\D5.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\D6.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\DC1.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\DC2.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\DC3.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\DC4.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\DC5.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\DC6.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\DICEBACK.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\Result.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\DiceFace\wait.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\ResultAssets\Back.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\ResultAssets\Player1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\ResultAssets\Player2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Game\Assets\ResultAssets\Win.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Music App\pause.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Fonts\neophyte-neophyte-400.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\clock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\Exit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\MenuButtonIcons\about.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\MenuButtonIcons\calIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\MenuButtonIcons\Code_1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\MenuButtonIcons\googIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\MenuButtonIcons\mBrowIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\MenuButtonIcons\Music.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\MenuButtonIcons\MyBrowIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\MenuButtonIcons\npIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\MenuButtonIcons\OGoog.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\MenuButtonIcons\toolbox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\MenuButtonIcons\usb-plug.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\MenuButtonIcons\usb.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\toolbox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\User.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Music App\back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Music App\lightning.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Music App\music.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Music App\p2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Music App\play.png" />
+    <Resource Include="Assets\Music App\search.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PageIcon\AB.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PageIcon\calc.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PageIcon\cB.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PageIcon\code.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PageIcon\dIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PageIcon\MG.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PageIcon\ms.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PageIcon\music.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PageIcon\note.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PageIcon\OG.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PageIcon\racing.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PageIcon\start.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Documents\UserManual.xps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="User.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Apps\Game\Assets\DiceFace\NewFolder\" />
+    <Folder Include="OutputFileAndData\" />
+  </ItemGroup>
+
+</Project>

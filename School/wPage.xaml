@@ -1,0 +1,30 @@
+﻿<Page x:Class="SDD_Student.wPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SDD_Student"
+      mc:Ignorable="d" 
+      d:DesignHeight="237" d:DesignWidth="976" MaxHeight="237" MaxWidth="976"
+      Title="wPage" Background="White">
+    <Page.Resources>
+        <Style TargetType="Border">
+            <Setter Property="CornerRadius" Value="40"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Label Content="Welcome," FontSize="40" FontWeight="Bold" HorizontalAlignment="Left" Margin="314,25,0,0" VerticalAlignment="Top"/>
+        <Label Content="" FontSize="40" FontWeight="Bold" HorizontalAlignment="Left" Margin="501,25,0,0" VerticalAlignment="Top" x:Name="wName" FontStyle="Italic"/>
+        <Label Content="Click on above tools to get started" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,118,0,0" VerticalAlignment="Top">
+            <Label.Foreground>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="green" Offset="0.1"/>
+                    <GradientStop Color="red" Offset=".5"/>
+                    <GradientStop Color="Blue" Offset=".4"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+
+    </Grid>
+</Page>

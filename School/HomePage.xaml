@@ -1,0 +1,269 @@
+﻿<Window x:Class="SDD_Student.HomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SDD_Student"
+        mc:Ignorable="d"
+        Title="HomePage" Height="600" Width="1000" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid MaxHeight="600" MaxWidth="1000" x:Name="HomePageGrid">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="red" Offset=".5"/>
+                <GradientStop Color="blue" Offset=".6"/>
+                <GradientStop Color="Pink" Offset=".1"/>
+                <GradientStop Color="Blue" Offset=".4"/>
+                <GradientStop Color="DarkGreen" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+        <Rectangle Fill="Orange" RenderTransformOrigin="0.5,0.5" Margin="-146,364,527,164" RadiusX="25" RadiusY="25" Opacity="0.3" StrokeThickness="0">
+            <Rectangle.Effect>
+                <BlurEffect/>
+            </Rectangle.Effect>
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-54.619"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Fill="Orange" RenderTransformOrigin="0.5,0.5" Margin="-192,241,562,289" RadiusX="30" RadiusY="30" Opacity="0.3" StrokeThickness="0">
+            <Rectangle.Effect>
+                <BlurEffect/>
+            </Rectangle.Effect>
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-53.86"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Fill="Orange" Height="50" RenderTransformOrigin="0.5,0.5" Margin="-125,211,801,339" RadiusX="25" RadiusY="25" Opacity="0.3">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-54.446"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="87" Margin="112,53,0,0" Stroke="Black" VerticalAlignment="Top" Width="222" RadiusY="5" RadiusX="5" StrokeThickness=".2" Fill="LightGray" Opacity="0.3">
+            <Rectangle.Effect>
+                <BlurEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+
+
+        <Image HorizontalAlignment="Left" Height="136" VerticalAlignment="Top" Width="112" Source="/User.png" Margin="-5,28,0,0"/>
+        <Label Content="Name:" Margin="122,57,822,523" Padding="0" FontSize="13" FontWeight="Bold"/>
+        <Label Content="Class:" Margin="128,80,834,494" Padding="0" FontSize="13" FontWeight="Bold"/>
+        <Label Content="" Margin="172,54,668,523" Padding="0" FontSize="15" Width="auto" Foreground="white" x:Name="NamePlace"/>
+        <Label Content="" Margin="172,79,668,499" Padding="0" FontSize="15" Width="auto" Foreground="white" x:Name="ClassPlace"/>
+        <Label Content="Log Out&#xA;" HorizontalAlignment="Left" Margin="954,45,0,0" VerticalAlignment="Top" Height="14" Padding="0" FontSize="10" Foreground="red" FontWeight="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="95" Margin="404,46,0,0" Stroke="Black" VerticalAlignment="Top" Width="298" Fill="Chocolate" Opacity="0.395" RadiusX="5" RadiusY="5">
+            <Rectangle.Effect>
+                <BlurEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Button Width="86" Background="Transparent" Margin="404,58,510,474" Focusable="False" BorderBrush="Transparent" x:Name="Timer" Click="Timer_Click">
+            <Image HorizontalAlignment="Left" Height="66" VerticalAlignment="Center" Width="86" Source="Assets/Images/clock.png"/>
+        </Button>
+        <Label Padding="0" Content="" FontSize="40" HorizontalAlignment="Left" Margin="476,65,0,0" VerticalAlignment="Top" Width="214" FontWeight="Bold" Foreground="white" x:Name="ShowTime"/>
+        <Label Content="SDD Student App" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" FontWeight="Bold" Margin="0,-1,0,0" Padding="0" FontSize="10" Foreground="Black"/>
+        <Label Content="Home Page - " HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" FontWeight="Bold" Margin="476,-2,0,0" Padding="0" FontSize="10" Foreground="Black"/>
+        <Label x:Name="AppBarName" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="56" FontWeight="Bold" Margin="540,-2,0,0" Padding="0" FontSize="10" Foreground="Black"/>
+        <Label Content="for Student" HorizontalAlignment="Left" Margin="169,142,0,0" VerticalAlignment="Top" FontSize="60" Padding="0" FontFamily="Fira Code" FontWeight="bold" Foreground="White" Width="416">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Made" HorizontalAlignment="Left" Margin="0,155,0,0" VerticalAlignment="Top" FontSize="60" Padding="0" FontFamily="Fira Code" FontWeight="bold" Foreground="DarkBlue" Width="156">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Rectangle HorizontalAlignment="Left" Height="272" Margin="780,380,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="294" Fill="LightBlue" Opacity="0.1" RadiusX="200" RadiusY="200">
+            <Rectangle.Effect>
+                <BlurEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="272" Margin="307,454,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="294" Fill="LightBlue" Opacity="0.1" RadiusX="200" RadiusY="200">
+            <Rectangle.Effect>
+                <BlurEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+
+        <Button Margin="939,0,0,550" Background="Transparent" BorderBrush="Transparent" x:Name="LogOutBtn" Click="LogOutBtn_Click">
+            <Image Source="Assets/Images/Exit.png"/>
+        </Button>
+        <Frame x:Name="MenuFrame" Margin="10,353,14,10" NavigationUIVisibility="Hidden" MaxHeight="237" MaxWidth="976" BorderBrush="Transparent" BorderThickness="0" Source=""/>
+
+        <!--Menu buttons sections-->
+        <Rectangle Fill="White" Margin="102,278,34,315" RadiusX="10" RadiusY="10" StrokeThickness="0"/>
+
+
+        <!-- Code Editor-->
+        <Button Margin="31,277,861,258" BorderBrush="Transparent" Background="White" x:Name="CodeBtn" Click="CodeBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value=" 20 0 20 20"/>
+                </Style>
+            </Button.Resources>
+            <StackPanel>
+                <Image Height="51" Width="80" Margin="0 -7 3 0" Source="Assets/Images/MenuButtonIcons/Code_1.png"/>
+                <Label Content="Code Editor" FontSize="15" Padding="0" Height="17" FontWeight="Bold" FontStyle="Normal" Width="85" Margin=" 0 -4 0 0 "/>
+            </StackPanel>
+        </Button>
+        <!-- Notepad-->
+        <Button Margin="136,221,756,314" BorderBrush="Transparent" Background="White" x:Name="NoteBtn" Click="NoteBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value=" 20 20 0 0"/>
+                </Style>
+            </Button.Resources>
+            <StackPanel>
+                <Image Height="43" Width="75" Margin="6 -2 3 0" Source="Assets/Images/MenuButtonIcons/npIcon.png"/>
+                <Label Content="Note Book" FontSize="15" Padding="0" Height="17" FontWeight="Bold" FontStyle="Normal" Width="85" Margin=" 0 -4 0 0 "/>
+            </StackPanel>
+        </Button>
+        <!-- Calculator-->
+        <Button Margin="242,277,650,258" BorderBrush="Transparent" Background="White" x:Name="CalculatorBtn" Click="CalculatorBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value=" 0 0 20 20"/>
+                </Style>
+            </Button.Resources>
+            <StackPanel>
+                <Image Height="46" Width="80" Margin="0 0 3 0" Source="Assets/Images/MenuButtonIcons/calIcon.png"/>
+                <Label Content="Calculator" FontSize="15" Padding="4 0 0  0" Height="17" FontWeight="Bold" FontStyle="Normal" Width="85" Margin=" 0 -4 0 0 "/>
+            </StackPanel>
+        </Button>
+        <!-- Browser -->
+        <Button Margin="348,218,544,316" BorderBrush="Transparent" Background="White" x:Name="DefBrowserBtn" Click="DefBrowserBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value=" 20 20 0 0"/>
+                </Style>
+            </Button.Resources>
+            <StackPanel>
+                <Image Height="40" Width="80" Margin="0 0 3 0" Source="Assets/Images/MenuButtonIcons/mBrowIcon.png"/>
+                <Label Content="MS Edge" FontSize="15" Padding="11 0 0  0" Height="22" FontWeight="Bold" FontStyle="Normal" Width="85" Margin=" 0 -4 0 0 "/>
+            </StackPanel>
+        </Button>
+
+        <!-- My Custom Browser -->
+        <Button Margin="454,277,438,257" BorderBrush="Transparent" Background="White" x:Name="MyBrowserBtn" Click="MyBrowserBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value=" 0 0 20 20"/>
+                </Style>
+            </Button.Resources>
+            <StackPanel>
+                <Image Height="46" Width="80" Margin="0 0 3 0" Source="Assets/PageIcon/dIcon.png">
+
+                </Image>
+                <Label Content=" SDD Dice" FontSize="15" Padding="3 0 0  0" Height="20" FontWeight="Bold" FontStyle="Normal" Width="85" Margin=" 0 -4 0 0 "/>
+            </StackPanel>
+        </Button>
+
+        <!--Google Search -->
+        <Button Margin="560,219,332,315" BorderBrush="Transparent" Background="White" x:Name="GoogleBtn" Click="GoogleBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value=" 20 20 0 0"/>
+                </Style>
+            </Button.Resources>
+            <StackPanel>
+                <Image Height="46" Width="80" Margin="0 0 3 0" Source="Assets/Images/MenuButtonIcons/OGoog.png"/>
+                <Label Content="Google" FontSize="15" Padding="17 0 0  0" Height="20" FontWeight="Bold" FontStyle="Normal" Width="85" Margin=" 0 -4 0 0 "/>
+            </StackPanel>
+        </Button>
+
+
+        <!--My Search -->
+        <Button Margin="666,278,226,256" BorderBrush="Transparent" Background="White" x:Name="MyGoogleBtn" Click="MyGoogleBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value=" 0 0 20 20"/>
+                </Style>
+            </Button.Resources>
+            <StackPanel>
+                <Image Height="46" Width="80" Margin="0 0 3 0" Source="Assets/Images/MenuButtonIcons/googIcon.png"/>
+                <Label Content="MyGoogle" FontSize="15" Padding="9 0 0  0" Height="20" FontWeight="Bold" FontStyle="Normal" Width="85" Margin=" 0 -4 0 0 "/>
+            </StackPanel>
+        </Button>
+
+        <!--My Search -->
+        <Button Margin="772,220,120,314" BorderBrush="Transparent" Background="White" x:Name="MyMusic" Click="MyMusic_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value=" 20 20 0 0"/>
+                </Style>
+            </Button.Resources>
+            <StackPanel>
+                <Image Height="46" Width="80" Margin="0 0 3 0" Source="Assets/Images/MenuButtonIcons/Music.png"/>
+                <Label Content="Music" FontSize="15" Padding="22 0 0  0" Height="20" FontWeight="Bold" FontStyle="Normal" Width="85" Margin=" 0 -4 0 0 "/>
+            </StackPanel>
+        </Button>
+
+
+        <!--About -->
+        <Button Margin="878,277,14,257" BorderBrush="Transparent" Background="White" x:Name="MyAbout" Click="MyAbout_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value=" 0 20 20 20"/>
+                </Style>
+            </Button.Resources>
+            <StackPanel>
+                <Image Height="46" Width="80" Margin="0 0 3 0" Source="Assets/Images/MenuButtonIcons/about.png"/>
+                <Label Content="About" FontSize="15" Padding="16 0 0  0" Height="20" FontWeight="Bold" FontStyle="Normal" Width="85" Margin=" 0 -4 0 0 "/>
+            </StackPanel>
+        </Button>
+        <Rectangle HorizontalAlignment="Left" Height="141" Margin="915,67,0,0" Stroke="White" VerticalAlignment="Top" Width="59" StrokeThickness="5" RadiusX="25" RadiusY="25">
+            <Rectangle.Effect>
+                <BlurEffect/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="red" Offset="0.6"/>
+                    <GradientStop Color="DarkBlue" Offset=".3"/>
+                    <GradientStop Color="Cyan" Offset=".1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="40" Margin="928,203,0,0" VerticalAlignment="Top" Width="30" Source="Assets/Images/MenuButtonIcons/usb.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-45.896"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="39" Margin="925,241,0,0" VerticalAlignment="Top" Width="36" Source="Assets/Images/MenuButtonIcons/usb-plug.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="134.205"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBox BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True" Background="Transparent" HorizontalAlignment="Left" Margin="950,68,0,0" TextWrapping="Wrap" Text="TOOLS" VerticalAlignment="Top" Width="24" Height="129" FontSize="20" FontWeight="Black" Foreground="Black"/>
+        <Image HorizontalAlignment="Left" Height="66" Margin="913,124,0,0" VerticalAlignment="Top" Width="37" Source="Assets\Images\toolbox.png"/>
+
+
+    </Grid>
+</Window>
