@@ -1,0 +1,2 @@
+This is a project use a 6 type algorithm to work with number manupulating, sorting, adding, finding highest, lowest.
+# It was made by me for a school assignment
